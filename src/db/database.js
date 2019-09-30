@@ -16,7 +16,7 @@ if (process.type !== 'renderer') {
     }
   }
 
-const adapter = new FileSync(path.join(STORE_PATH, '/girls-reptile.json'))
+const adapter = new FileSync(path.join(STORE_PATH, '/pic-gather.json'))
 
 const db = Datastore(adapter)
 
@@ -32,6 +32,9 @@ if (!db.has('config').value()) {
   let config = db.get('config').value()
   if(config.diffDirectory==undefined){
     config.diffDirectory = true
+  }
+  if(config.rsUrl==undefined){
+    config.rsUrl = 'https://raw.githubusercontent.com/Licoy/pic-gather/master/reptile-source.json'
   }
   db.set('config',config).write()
 }

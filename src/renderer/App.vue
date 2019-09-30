@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: 'girls-reptile'
+    name: 'pic-gather'
   }
 </script>
 

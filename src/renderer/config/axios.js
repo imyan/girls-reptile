@@ -19,7 +19,7 @@ axiosInstance.interceptors.response.use(res => {
     console.error(error)
 })
 
-export const get = (url,params=null,pathVariable=null) =>  {
+export const get = (url,params=null,pathVariable=null,headers={}) =>  {
     let time = new Date().getTime()
     if(params==null){
         params = {
@@ -28,7 +28,7 @@ export const get = (url,params=null,pathVariable=null) =>  {
     }else{
         params.request_time = time
     }
-    return axiosInstance.get(sf(url, pathVariable), {params:params})
+    return axiosInstance.get(sf(url, pathVariable), {params:params,headers:headers})
 }
 
 export const post = (url,params,pathVariable=null) => axiosInstance.post(sf(url, pathVariable), params)
