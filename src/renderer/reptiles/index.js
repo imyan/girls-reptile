@@ -87,7 +87,8 @@ export default {
                         }
                         ipcRenderer.send("download-button", {url:currentLink,name:imgItem.name,headers:[
                             {name:"Referer", value: referer},
-                        ]})
+                        ]});
+                        vm.$store.commit('COUNT')
                     }
                 }else{
                     for (let image_index = 0; image_index < images.length; image_index++) {
@@ -102,7 +103,8 @@ export default {
                         ipcRenderer.send("download-button", {url:link,name:imgItem.name,headers:[
                             {name:"Referer", value: referer},
                             {name:"User-Agent", value:"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"}
-                        ]})
+                        ]});
+                        vm.$store.commit('COUNT')
                     }
                 }
             }

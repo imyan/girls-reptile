@@ -46,9 +46,10 @@ function createDownloadManager(){
         if (error) {
             console.log("finished: " + finished);
             console.log("errors: " + errors);
+            event.sender.send('img-error', null)
             return;
         }
-        event.sender.send('download-url-ok', url)
+        event.sender.send('img-success', null)
         console.log("all finished");
     });
   });
@@ -82,12 +83,6 @@ function createMenu(){
 function createDockMenu(mainWindow){
   const dockMenu = Menu.buildFromTemplate([
     {
-      label: '重新启动',
-      click () { 
-        app.relaunch()
-        app.quit()
-      }
-    }, {
       label: '检查更新',
       click () { 
         mainWindow.webContents.send('sys-check-update');

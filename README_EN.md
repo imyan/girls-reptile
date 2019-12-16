@@ -42,13 +42,15 @@ You can download and install here by [clicking here](https://github.com/Licoy/pi
 ## Acquisition instructions
 - [Do you have a better URL? Click me to submit with official support](https://github.com/Licoy/pic-gather/issues/new)
 - [Can't I meet my needs, can I write my own collection source? Of course, point me to view the document.](https://github.com/Licoy/pic-gather/wiki/reptile-source-rules)
-## Use screenshots (V2.0.0 version, please refer to the latest version)
+## Use screenshots (V2.1.0 version, please refer to the latest version)
 ### Mac
-![mac](./docs/image/mac-1-2.0.0.png)
-![mac](./docs/image/mac-2-2.0.0.png)
+![mac](./docs/image/mac-1.png)
+![mac](./docs/image/mac-2.png)
+![mac](./docs/image/mac-3.png)
 ### Windows
-![Windows](./docs/image/win-1-2.0.0.png)
-![Windows](./docs/image/win-2-2.0.0.png)
+![mac](./docs/image/win-1.png)
+![mac](./docs/image/win-2.png)
+![mac](./docs/image/win-3.png)
 ## Instructions for use
 This project is for learning and communication purposes only. Please do not use it for commercial or illegal purposes. If you violate the usage regulations, please bear the relevant consequences.
 ## Resource description

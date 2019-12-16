@@ -1,7 +1,7 @@
 {
   "name": "pic-gather",
   "productName": "pic-gather",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "author": "licoy",
   "description": "Image collector based on electron-vue, support custom acquisition source station configuration, compatible with MacOS and Windows operating system",
   "license": "https://github.com/Licoy/pic-gather/blob/master/LICENSE",

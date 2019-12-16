@@ -1,7 +1,12 @@
 const state = {
     running: false,
     timeout: 10,
-    diffDirectory: true
+    diffDirectory: true,
+    count:{
+      wait:0,
+      success:0,
+      error:0,
+    }
 }
 
 const mutations = {
@@ -16,6 +21,16 @@ const mutations = {
     },
     DIFF_DIR(state, param){
         state.diffDirectory = param
+    },
+    COUNT(state, key='wait', num=1){
+      state.count[key] += num;
+    },
+    COUNT_RESET(state){
+      state.count = {
+        wait:0,
+        success:0,
+        error:0,
+      }
     }
 }
 
